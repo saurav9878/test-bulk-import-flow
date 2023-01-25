@@ -10,7 +10,7 @@ rootDirectory = postman/collections
 
 [relations.apiDefinition]
 rootDirectory = postman/schemas
-files[] = {"path":"60ded2db-4165-4dde-86bd-581685b7c3c9.json","metaData":{}}
+files[] = {"path":"1b5e22e3-deff-4204-a19b-9ba1859f242f.json","metaData":{}}
 
 [relations.apiDefinition.metaData]
 rootFiles[] = 1b5e22e3-deff-4204-a19b-9ba1859f242f.json
