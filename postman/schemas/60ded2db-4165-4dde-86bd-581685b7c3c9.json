@@ -1,0 +1,88 @@
+{
+  "openapi" : "3.0.1",
+  "info" : {
+    "title" : "Edited from Postman V11",
+    "description" : "Created by AWS Lambda",
+    "version" : "2022-05-16 06:06:04UTC"
+  },
+  "servers" : [ {
+    "url" : "https://0eys9a9l7j.execute-api.us-east-1.amazonaws.com/{basePath}",
+    "variables" : {
+      "basePath" : {
+        "default" : ""
+      }
+    }
+  } ],
+  "paths" : {
+    "/$default" : {
+      "x-amazon-apigateway-any-method" : {
+        "isDefaultRoute" : true,
+        "x-amazon-apigateway-integration" : {
+          "payloadFormatVersion" : "2.0",
+          "type" : "aws_proxy",
+          "httpMethod" : "POST",
+          "uri" : "arn:aws:apigateway:us-east-1:lambda:path/2015-03-31/functions/arn:aws:lambda:us-east-1:780401591112:function:datastore-creator/invocations",
+          "connectionType" : "INTERNET"
+        }
+      }
+    },
+    "/" : {
+      "x-amazon-apigateway-any-method" : {
+        "responses" : {
+          "default" : {
+            "description" : "Default response for ANY /"
+          }
+        },
+        "x-amazon-apigateway-integration" : {
+          "payloadFormatVersion" : "2.0",
+          "type" : "aws_proxy",
+          "httpMethod" : "POST",
+          "uri" : "arn:aws:apigateway:us-east-1:lambda:path/2015-03-31/functions/arn:aws:lambda:us-east-1:780401591112:function:datastore-creator/invocations",
+          "connectionType" : "INTERNET"
+        }
+      }
+    },
+    "/datastore-notcreators-test" : {
+      "x-amazon-apigateway-any-method" : {
+        "responses" : {
+          "default" : {
+            "description" : "Default response for ANY /datastore-notcreators-test"
+          }
+        },
+        "x-amazon-apigateway-integration" : {
+          "payloadFormatVersion" : "2.0",
+          "type" : "aws_proxy",
+          "httpMethod" : "POST",
+          "uri" : "arn:aws:apigateway:us-east-1:lambda:path/2015-03-31/functions/arn:aws:lambda:us-east-1:780401591112:function:datastore-creator/invocations",
+          "connectionType" : "INTERNET"
+        }
+      }
+    },
+    "/{proxy+}" : {
+      "parameters" : [ {
+        "name" : "proxy+",
+        "in" : "path",
+        "description" : "Generated path parameter for proxy+",
+        "required" : true,
+        "schema" : {
+          "type" : "string"
+        }
+      } ],
+      "x-amazon-apigateway-any-method" : {
+        "responses" : {
+          "default" : {
+            "description" : "Default response for ANY /{proxy+}"
+          }
+        },
+        "x-amazon-apigateway-integration" : {
+          "payloadFormatVersion" : "2.0",
+          "type" : "aws_proxy",
+          "httpMethod" : "POST",
+          "uri" : "arn:aws:apigateway:us-east-1:lambda:path/2015-03-31/functions/arn:aws:lambda:us-east-1:780401591112:function:datastore-creator/invocations",
+          "connectionType" : "INTERNET"
+        }
+      }
+    }
+  },
+  "x-amazon-apigateway-importexport-version" : "1.0"
+}
